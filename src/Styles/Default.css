@@ -1,0 +1,20 @@
+.default-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--main-grey);
+    position: fixed;
+    left: 0;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+}
+
+.default-container .title {
+    margin-bottom: 25px;
+    font-size: 3rem;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    text-align: center;
+}

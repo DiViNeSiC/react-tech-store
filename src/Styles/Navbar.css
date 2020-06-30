@@ -1,0 +1,243 @@
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    margin: 0;
+    background: linear-gradient(to left, var(--main-cream), var(--main-pink));
+    width: 100%;
+    line-height: 60px;
+    height: 60px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    top:0;
+    box-shadow: 0 0 20px rgba(2, 2, 2, .6);
+    padding: 8px 0px;
+    font-size: 18px;
+    z-index: 3;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-item  {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-selector {
+    position: relative;
+}
+
+.social-media-grid {
+    display: grid;
+    position: absolute;
+    justify-content: center;
+    left: -4px;
+    top: 51px;
+    border: 1px solid var(--main-pink);
+    width: 50px;
+    background: linear-gradient(to bottom, var(--main-cream), var(--main-pink));
+    height: 0;
+    padding: 0 15;
+    font-size: 17px;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    opacity: 0;
+    transition: .6s;
+    pointer-events: none;
+    z-index: 4;
+}
+
+.contact-selector .social-icon {
+    cursor: pointer;
+    pointer-events: visible;
+    height: 0;
+}
+
+.social-icon:hover {
+    transform: scale(1.2, 1.2);
+    pointer-events: visible;
+}
+
+.social-media-grid .icon {
+    opacity: 0;
+    margin: -5px;
+    transition: .6s;
+    transition-delay: .2s;
+}
+
+.contact-selector:hover .social-media-grid {
+    opacity: 1;
+    pointer-events: visible;
+    height: 180px;
+}
+
+.contact-selector:hover .social-icon {
+    opacity: 1;
+    pointer-events: visible;
+    height: 40px;
+}
+
+.product-selector {
+    justify-content: center;
+    align-self: center;
+    margin-left: 10px;
+    height: 35px;
+
+}
+
+.product-selector .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-dark);
+    transition: 1s;
+    padding: 10px;
+    height: 35px;
+    border-radius: .25rem;
+}
+
+.product-selector .link:hover {
+    background: var(--main-dark);
+    color: var(--main-cream);
+}
+
+.cart-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 50px;
+    text-align: center;
+    margin-top: -3px;
+    margin-left: auto;
+    margin-right: 5px;
+    color: var(--main-dark);
+    transition: 1s;
+    border-radius: .25rem;
+}
+
+.cart-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    height: 40px;
+    border-radius: .25rem;
+    margin-right: 5px;
+}
+
+.cart-selector:hover .cart-icon {
+    background: var(--main-cream);
+}
+
+.cart-selector:hover {
+    background: var(--main-dark);
+    color: var(--main-cream);
+}
+
+@media all and (max-width: 500px) {
+    .navbar .header .logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .product-selector .link {
+        height: 35px;
+    }
+}
+
+@media all and (max-width: 460px) {
+    .navbar .header .logo {
+        width: 90px;
+        height: 90px;
+        margin-left: -18px;
+    }
+}
+
+@media all and (max-width: 380px) {
+    .navbar .header .logo {
+        width: 70px;
+        height: 70px;
+        margin-left: -25px;
+    }
+        
+    .cart-selector {
+        font-size: .8rem;
+        padding-right: -5px;
+    }
+    
+    .cart-icon .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: -3px;
+    }
+    
+    .product-selector {
+        height: 35px;
+    }
+        
+    .product-selector .link {
+        font-size: .8rem;
+        margin: 0 -10px;
+        height: 35px;
+    }
+
+    .phone-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .cart-selector {
+        height: 35px;
+    }
+
+    .cart-icon {
+        height: 25px;
+    }
+
+    .social-media-grid {
+        top: 40px;
+        width: 35px;
+    }
+
+    .social-icon {
+        height: 28px;
+        width: 28px;
+    }
+
+    .social-media-grid .link {
+        margin: -5px 0;
+    }
+        
+    .contact-selector:hover .social-media-grid {
+        height: 160px;
+    }
+        
+    .contact-selector:hover .social-icon {
+        height: 35px;
+    }
+}

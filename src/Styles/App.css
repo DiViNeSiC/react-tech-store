@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  list-style: none;
+}
+
+:root {
+  --main-cream: #f17d79;
+  --main-white: #f3f3f3;
+  --main-dark: #141313;
+  --main-grey: #afafaf;
+  --main-pink: #ff6f9aa2;
+  --main-red: #ff0525;
+  --main-blue: #253676
+}
+
+body {
+  background-color: var(--main-grey);
+  font-family: 'Oswald';
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}

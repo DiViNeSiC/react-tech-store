@@ -1,0 +1,319 @@
+:root {
+    --cart-item-width: 450px
+}
+
+.cart-item-grid {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-direction: column;
+    position: relative;
+    margin-top: 10px;
+}
+
+
+.item-container {
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    grid-template-columns: repeat(6, minmax(50px, 150px));
+    margin: 7px 0;
+    padding: 5px 10px;
+    height: 100px;
+    background: var(--main-white);
+    border-radius: .6rem;
+    border: 2px solid var(--main-dark);
+}
+
+.item-container div {
+    transition: 1s;
+    border-radius: .6rem;
+}
+
+.item-container .pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic .img {
+    width: 90px;
+    height: 90px;
+    transition: 1s;
+    padding: 10px;
+    border-radius: .6rem;
+}
+
+.pic .img:hover {
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
+}
+
+.info {
+    padding: 10px;
+    cursor: context-menu;
+}
+
+.info:hover {
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
+}
+
+.info .name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Oswald';
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+.main-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-price .price {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.2rem;
+    transition: 1s;
+    padding: 10px;
+    cursor: context-menu;
+}
+
+.main-price .price:hover {
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
+}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.quantity .button {
+    margin: 0 5px;
+    background: var(--main-dark);
+    color: var(--main-white);
+    font-size: 1.1rem;
+    border-radius: .6rem;
+    transition: .5s;
+    outline: none;
+}
+
+.quantity .button:hover {
+    background: var(--main-white);
+    color: var(--main-dark);
+    box-shadow: 2px 2px rgba(0, 0, 0, .5);
+}
+
+.quantity .count {
+    margin: 0 5px;
+    font-size: 1.5rem;
+    transition: .5s;
+}
+
+.remove-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.remove-item img:hover {
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
+    background: var(--main-grey);
+}
+
+.remove-item img {
+    padding: 5px;
+    border-radius: .6em;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+
+.total-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.details div {
+    margin: 8px 0;
+}
+
+.clear-all-btn button{
+    background-color: var(--main-cream);
+    color: var(--main-dark);
+    font-size: 2rem;
+    border-radius: .6rem;
+    padding: 15px;
+    transition: .4s ease;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.clear-all-btn button:hover {
+    background: var(--main-red);
+}
+
+.subtotal {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.2rem;
+}
+
+.tax {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.2rem;
+}
+
+.total {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.2rem;
+}
+
+.purchase button {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: var(--main-blue);
+    font-size: 1.5rem;
+    transition: all 1s linear;
+    font-family: 'Oswald';
+}
+
+.purchase img {
+    margin-left: 20px;
+}
+
+.purchase button:hover {
+    background: var(--main-pink);
+}
+
+.nothing-is-here {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.home-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background: var(--main-dark);
+    color: var(--main-white);
+    border-radius: .6rem;
+    padding: 10px;
+}
+
+.home-link:hover {
+    color: var(--main-dark);
+    background: var(--main-white);
+}
+
+@media all and (max-width: 500px) {
+    .item-container {
+        display: grid;
+        align-content: center;
+        align-self: center;
+        grid-template-columns: repeat(1, 200px);
+        grid-template-rows: repeat(auto-fill, 150px);
+        height: fit-content;
+        min-width: var(--cart-item-width);
+    }
+
+    .pic {
+        position: absolute;
+        top: calc(var(--cart-item-width)* .035);
+        left: calc(var(--cart-item-width)* .04);
+    }
+
+    .pic .img {
+        width: 80px;
+        height: 80px;
+        padding: 0;
+    }
+
+    .info {
+        position: absolute;
+        top: calc(var(--cart-item-width)* .05);
+        left: calc(var(--cart-item-width)* .22);
+    }
+
+    .main-price {
+        position: absolute;
+        top: calc(var(--cart-item-width)* .125);
+        left: calc(var(--cart-item-width)* .22);
+    }
+
+    .quantity {
+        position: absolute;
+        top: calc(var(--cart-item-width)* .118);
+        left: calc(var(--cart-item-width)* .355);
+    }
+
+    .remove-item {
+        position: absolute;
+        top: calc(var(--cart-item-width)* .125);
+        left: calc(var(--cart-item-width)* .8);
+    }
+
+    .total-price {
+        position: absolute;
+        top: calc(var(--cart-item-width)* .23);
+        left: calc(var(--cart-item-width)* .035);
+    }
+
+}
+
+@media all and (max-width: 410px) {
+    .item-container {
+        min-width: calc(var(--cart-item-width) - 110px);
+    }
+    .remove-item {
+        position: absolute;
+        top: calc(var(--cart-item-width)* .125);
+        left: calc(var(--cart-item-width)* .6);
+    }
+}
+
+@media all and (max-width: 340px) {
+    .item-container {
+        min-width: calc(var(--cart-item-width) - 130px);
+    }
+    .remove-item {
+        position: absolute;
+        top: calc(var(--cart-item-width)* .125);
+        left: calc(var(--cart-item-width)* .575);
+    }
+    .quantity {
+        position: absolute;
+        top: calc(var(--cart-item-width)* .118);
+        left: calc(var(--cart-item-width)* .315);
+    }
+}

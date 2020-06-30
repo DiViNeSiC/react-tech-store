@@ -1,0 +1,132 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-bottom: auto;
+    position: relative;
+    bottom: -50px;
+    top: 0;
+    background: linear-gradient(to bottom, var(--main-cream), var(--main-pink));
+    height: 160px;
+    z-index: 3;
+    padding: 10px;
+}
+
+.footer-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding: 10px;
+}
+
+.footer-item {
+    margin-bottom: 15px;
+}
+
+.item-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 200px;
+}
+
+.item-contact .phone-icon {
+    width: 60px;
+    height: 60px;
+    transition:2s;
+    background-color: var(--main-blue);
+    border-radius: .6rem;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    position: absolute;
+    right: calc(100% - 200px);
+}
+
+.item-contact:hover .phone-icon {
+    transform: rotate(-360deg);
+    right: 200px;
+    border-radius: .6rem 0 0 .6rem;
+}
+
+.social-media-flex:hover .phone-icon {
+    transform: rotate(-360deg);
+    right: 200px;
+    border-radius: .6rem 0 0 .6rem;
+}
+
+.item-contact:hover .social-media-flex {
+    opacity: 1;
+    pointer-events: all;
+    width: 200px;
+}
+
+.item-contact:hover .social-media-flex .link {
+    width: 40px;
+}
+
+.social-media-flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 60px;
+    width: 100px;
+    background-color: var(--main-blue);
+    border-radius: 0 1rem 1rem 0;
+    opacity: 0;
+    transition: all 1.3s linear;
+    pointer-events: none;
+    z-index: 4;
+}
+
+.social-media-flex .link {
+    margin: 10px;
+    width: 0px;
+    transition: all 1.3s linear;
+}
+
+.details-div {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    margin: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.cart-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-value .icon {
+    width: 30px;
+    height: 30px;
+}
+
+.cart-value .icon,
+.cart-value h2 {
+    margin: 2px;
+}
+
+
+@media all and (max-width: 450px) {
+    .details-div {
+        font-size: .7rem;
+        top: 0;
+    }
+
+    .cart-value {
+        font-size: .7rem;
+    }
+
+}
