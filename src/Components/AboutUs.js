@@ -5,7 +5,7 @@ import logo from '../logo/logo.svg'
 import '../Styles/AboutUs.css'
 
 export default function AboutUs() {
-    const { companyName, creator, description, tel, email } = information
+    const { creator, tel, email } = information
     return (
         <div className='about-us-div'>
             <div className='about-us'>

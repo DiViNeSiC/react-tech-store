@@ -28,7 +28,7 @@ export default function Modal() {
                                             value.handleCloseModal()
                                             value.handleDetails(value.modalDetails.sys.id)
                                         }}>
-                                            <img src={image.fields.file.url} alt='PRODUCT IMAGE' />
+                                            <img src={image.fields.file.url} alt='PRODUCT' />
                                         </div>
                                     </Link>
                                 </div>

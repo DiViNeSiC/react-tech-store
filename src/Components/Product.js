@@ -20,7 +20,7 @@ export default function Product({ product }) {
                         <div className='product-image'>
                             <Link to='/details'>
                                 <div className='product-picture' onClick={() => value.handleDetails(product.sys.id)}>
-                                    <img src={image.fields.file.url} alt='PRODUCT IMAGE' />
+                                    <img src={image.fields.file.url} alt='PRODUCT' />
                                 </div>
                             </Link>
                             <div className='cart-mini'>

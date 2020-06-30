@@ -14,13 +14,13 @@ export default function Footer() {
                     <div className='contact-div'>
                             <img src={PhoneIcon} alt='' className='icon phone-icon'/>
                             <div className='social-media-flex'>
-                                <a className='link'>
+                                <a className='link' href='/'>
                                     <img src={InstagramIcon} alt=''  className='icon social-icon'/>
                                 </a>
-                                <a className='link'>
+                                <a className='link' href='/'>
                                     <img src={TwitterIcon} alt='' className='icon social-icon'/>
                                 </a>
-                                <a className='link'>
+                                <a className='link' href='/'>
                                     <img src={FacebookIcon} alt='' className='icon  social-icon'/>
                                 </a>
                             </div>

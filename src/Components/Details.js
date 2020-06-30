@@ -31,7 +31,7 @@ export default function Details() {
                 return (
                     <div className='detail-container'>
                         <div className='detail-picture'>
-                            <img src={image.fields.file.url} alt='PRODUCT IMAGE' className='detail-image' />
+                            <img src={image.fields.file.url} alt='PRODUCT' className='detail-image' />
                         </div>
                         <div className='detail-info'>
                             <div className='info-title'>
