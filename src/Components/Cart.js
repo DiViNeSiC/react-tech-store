@@ -2,7 +2,6 @@ import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { ProductConsumer } from '../data/Context'
 import CartItem from './CartItem'
-import CartIcon from '../Icons/CartIcon.png'
 import '../Styles/Cart.css'
 import PayPal from './PayPal'
 
