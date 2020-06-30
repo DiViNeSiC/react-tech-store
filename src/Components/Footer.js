@@ -12,16 +12,16 @@ export default function Footer() {
             <ul className='footer-list'>
                 <li className='footer-item item-contact'>
                     <div className='contact-div'>
-                            <img src={PhoneIcon} className='icon phone-icon'/>
+                            <img src={PhoneIcon} alt='' className='icon phone-icon'/>
                             <div className='social-media-flex'>
                                 <a className='link'>
-                                    <img src={InstagramIcon} className='icon social-icon'/>
+                                    <img src={InstagramIcon} alt=''  className='icon social-icon'/>
                                 </a>
                                 <a className='link'>
-                                    <img src={TwitterIcon} className='icon social-icon'/>
+                                    <img src={TwitterIcon} alt='' className='icon social-icon'/>
                                 </a>
                                 <a className='link'>
-                                    <img src={FacebookIcon} className='icon  social-icon'/>
+                                    <img src={FacebookIcon} alt='' className='icon  social-icon'/>
                                 </a>
                             </div>
                     </div>

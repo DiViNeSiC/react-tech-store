@@ -10,7 +10,7 @@ export default function AboutUs() {
         <div className='about-us-div'>
             <div className='about-us'>
                 <div className='title'>
-                    <img src={logo} />
+                    <img src={logo} alt='' />
                 </div>
                 <div className='creator'>
                     Creator : {creator}

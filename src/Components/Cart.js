@@ -48,7 +48,7 @@ export default function Cart() {
                                 </div>
                                 <div className='purchase'>
                                     <button className='btn'>
-                                        <img src={CartIcon} className='icon' />
+                                        <img src={CartIcon} alt='' className='icon' />
                                         Purchase
                                     </button>
                                 </div>

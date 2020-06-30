@@ -54,7 +54,7 @@ export default function Details() {
                                         </div>
                                     ) : (
                                         <div onClick={() => value.handleAddToCart(value.productDetails.sys.id)}>
-                                            <img src={CartIcon} className='icon' />
+                                            <img src={CartIcon} alt='' className='icon' />
                                             Add Cart
                                         </div>
                                     )} 

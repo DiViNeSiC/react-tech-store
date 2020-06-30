@@ -14,21 +14,21 @@ export default function Navbar() {
             <ul className='navbar-list'>
                 <li className='header'>
                     <Link to='/about-us' className='link'>
-                        <img src={logo} className='logo' />
+                        <img src={logo} alt='' className='logo' />
                     </Link>
                 </li>
                 <li>
                     <div className='navbar-item contact-selector'>
-                        <img src={PhoneIcon} className='icon phone-icon'/>
+                        <img src={PhoneIcon} alt='' className='icon phone-icon'/>
                         <div className='social-media-grid'>
                             <a className='link'>
-                                <img src={InstagramIcon} className='icon social-icon'/>
+                                <img src={InstagramIcon} alt='' className='icon social-icon'/>
                             </a>
                             <a className='link'>
-                                <img src={TwitterIcon} className='icon social-icon'/>
+                                <img src={TwitterIcon} alt='' className='icon social-icon'/>
                             </a>
                             <a className='link'>
-                                <img src={FacebookIcon} className='icon  social-icon'/>
+                                <img src={FacebookIcon} alt='' className='icon  social-icon'/>
                             </a>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ export default function Navbar() {
             </ul>
             <Link to='/cart' className='cart-selector link' >
                 <div className='cart-icon'>
-                    <img src={CartIcon} className='icon cart-icon' />
+                    <img src={CartIcon} alt='' className='icon cart-icon' />
                 </div>
                 My cart
             </Link>

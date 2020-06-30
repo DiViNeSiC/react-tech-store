@@ -16,7 +16,7 @@ export default function CartDetails() {
                 return (
                     <>
                         <div className='cart-value'>
-                            <img src={CartIcon} className='icon' />
+                            <img src={CartIcon} alt='' className='icon' />
                             {total ? (
                                 <h2>
                                     ${total}

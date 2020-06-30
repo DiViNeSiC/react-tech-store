@@ -13,7 +13,7 @@ export default function CartItem({ cartProduct, handleAddItem, handleRemoveItem,
     return (
         <div className='item-container'>
                 <div className='pic'>
-                    <img src={image.fields.file.url} className='img' />
+                    <img src={image.fields.file.url} alt='' className='img' />
                 </div>
                 <div className='info'>
                     <div className='name'>
@@ -31,7 +31,7 @@ export default function CartItem({ cartProduct, handleAddItem, handleRemoveItem,
                     <button className='button' onClick={() => handleAddItem(cartProduct.sys.id)}>{`>`}</button>
                 </div>
                 <div className='remove-item'>
-                    <img src={TrashCan} className='icon' onClick={() => handleDeleteItem(cartProduct.sys.id)} />
+                    <img src={TrashCan} alt='' className='icon' onClick={() => handleDeleteItem(cartProduct.sys.id)} />
                 </div>
                 <div className='total-price'>
                     {`Total Price: $${count * price}`}
