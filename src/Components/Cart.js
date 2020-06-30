@@ -1,9 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { ProductConsumer } from '../data/Context'
 import CartItem from './CartItem'
 import CartIcon from '../Icons/CartIcon.png'
 import '../Styles/Cart.css'
+import PayPal from './PayPal'
 
 export default function Cart() {
     return (
@@ -47,10 +48,11 @@ export default function Cart() {
                                     Total : ${total}
                                 </div>
                                 <div className='purchase'>
-                                    <button className='btn'>
-                                        <img src={CartIcon} alt='' className='icon' />
-                                        Purchase
-                                    </button>
+                                    <PayPal 
+                                        total={total} 
+                                        clearCart={value.handleClearCart} 
+                                        history={useHistory} 
+                                    />
                                 </div>
                             </div>
                             ) : (

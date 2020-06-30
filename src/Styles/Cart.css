@@ -189,24 +189,15 @@
     font-size: 2.2rem;
 }
 
-.purchase button {
+.purchase {
+    height: 50px;
+}
+
+.paypal-button {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
     align-items: center;
-    padding: 10px;
-    background: var(--main-blue);
-    font-size: 1.5rem;
-    transition: all 1s linear;
-    font-family: 'Oswald';
-}
-
-.purchase img {
-    margin-left: 20px;
-}
-
-.purchase button:hover {
-    background: var(--main-pink);
+    justify-content: center;
+    outline: none;
 }
 
 .nothing-is-here {

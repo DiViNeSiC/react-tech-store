@@ -65,6 +65,7 @@
 
 .item-contact:hover .social-media-flex .link {
     width: 40px;
+    pointer-events: visible;
 }
 
 .social-media-flex {
@@ -82,12 +83,14 @@
     opacity: 0;
     transition: all 1.3s linear;
     pointer-events: none;
+    transition: pointer 1.3;
     z-index: 4;
 }
 
 .social-media-flex .link {
     margin: 10px;
     width: 0px;
+    pointer-events: none;
     transition: all 1.3s linear;
 }
 
