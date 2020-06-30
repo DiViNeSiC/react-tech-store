@@ -8,7 +8,7 @@ export default function Details() {
     return (
         <ProductConsumer>
             {value => {
-                if (value.productDetails.fields == undefined) {
+                if (value.productDetails.fields === undefined) {
                     return (
                         <div className='error-message'>
                             <h1 className='message'>
